@@ -4,7 +4,7 @@ from .models import Board
 from .forms import BoardForm
 from accounts.models import User
 from django.core.paginator import Paginator
-from .models import Tag
+from tag.models import Tag
 
 def board_write(request):
     if not request.session.get('user'):
